@@ -1,6 +1,6 @@
 {
-    "routes": [
-      { "handle": "vercel" }
-    ]
-  }
-  
+  "routes": [
+    { "src": "/Back/End/*", "dest": "/Back/End/servidor.js" },
+    { "handle": "filesystem" }
+  ]
+}
