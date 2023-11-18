@@ -1,0 +1,12 @@
+:root{
+    --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%)
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background:var(--background);
+
+}
