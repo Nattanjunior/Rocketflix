@@ -1,6 +1,12 @@
 {
+  "version": 2,
+  "builds": [
+    { "src": "/front-end/**", "use": "@vercel/static" },
+    { "src": "/back-end/**", "use": "@vercel/node" }
+  ],
   "routes": [
-    { "src": "/Back/End/*", "dest": "/Back/End/servidor.js" },
-    { "handle": "filesystem" }
+    { "handle": "filesystem" },
+    { "src": "/back-end/.*", "dest": "/back-end/index.js" },
+    { "src": "/front-end/(.*)", "dest": "/front-end/$1" }
   ]
 }
