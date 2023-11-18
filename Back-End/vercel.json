@@ -1,0 +1,7 @@
+{
+    "function":{
+        "Back-End/**/*.js":{
+            "runtime": "nodejs16.x"
+        }
+    }
+}
