@@ -1,7 +1,6 @@
 {
-    "function":{
-        "Back-End/**/*.js":{
-            "runtime": "nodejs16.x"
-        }
-    }
-}
+    "routes": [
+      { "handle": "vercel" }
+    ]
+  }
+  
