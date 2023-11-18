@@ -9,7 +9,7 @@
   "routes":[
     {
       "src": "(.*)",
-      "dest": "Bacl-End/servidor.js"
+      "dest": "Back-End/servidor.js"
     }
   ]
 }
