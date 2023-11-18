@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/back-end/.*", "dest": "/back-end/index.js" },
-    { "src": "/front-end/(.*)", "dest": "/front-end/$1" }
+  "builds":[
+    {
+      "src":"Back-End/servidor.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes":[
+    {
+      "src": "(.*)",
+      "dest": "Bacl-End/servidor.js"
+    }
   ]
 }
