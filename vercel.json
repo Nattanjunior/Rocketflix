@@ -5,7 +5,7 @@
     { "src": "back-end/**", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/back-end/(.*)", "dest": "back-end/$1" },
+    { "src": "/back-end/(.*)", "dest": "http://localhost:3000/$1" },
     { "src": "/(.*)", "dest": "front-end/$1" }
   ]
 }
