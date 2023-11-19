@@ -5,6 +5,10 @@
       {
         "src": "(.*)",
         "dest": "Back-End/servidor.js"
+      },
+      {
+        "src":"(.*)",
+        "dest":"Front-End/src/main.jsx"
       }
     ]
   }
