@@ -12,7 +12,6 @@ app.get('/', async (req,res)=>{
         console.log(data)
         res.json({data})
     }catch(error){
-        console.error(error)
         res.status(461).json({message: "Acabaram os Filmes :("})
     }
 })
