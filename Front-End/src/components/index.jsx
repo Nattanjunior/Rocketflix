@@ -8,7 +8,7 @@ export function Index(){
         e.preventDefault()
 
         try{
-            const response = await fetch('http://localhost:3000/');
+            const response = await fetch('https://rocketflix-roan.vercel.app/');
             const data = await response.json()
                 const randomMovie = data.data.results[
                     Math.floor(Math.random() * data.data.results.length)
