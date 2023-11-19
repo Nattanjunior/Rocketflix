@@ -1,14 +1,11 @@
 {
-    "version": 2,
-    
-    "routes":[
-      {
-        "src": "(.*)",
-        "dest": "Back-End/servidor.js"
-      },
-      {
-        "src":"(.*)",
-        "dest":"Front-End/src"
-      }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    { "src": "front-end", "use": "@vercel/static" },
+    { "src": "back-end/**", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "back-end/$1" },
+    { "src": "/(.*)", "dest": "front-end/$1" }
+  ]
+}
