@@ -8,7 +8,7 @@
       },
       {
         "src":"(.*)",
-        "dest":"Front-End/src/main.jsx"
+        "dest":"Front-End/src"
       }
     ]
   }
