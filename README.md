@@ -9,4 +9,4 @@ design moderno. Aprendi a integrar APIs e
 aprimorei minhas habilidades em 
 desenvolvimento front-end e back-end com 
 essas tecnologias.</p>
-<a href='https://rocketflix-e5b2.vercel.app/' target='blank'> Link do Projeto</a>
+<a href='https://rocketflix-e5b2.vercel.app/' target='_blank'> Link do Projeto</a>
