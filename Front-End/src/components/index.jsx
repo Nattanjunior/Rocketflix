@@ -33,9 +33,12 @@ export function Index(){
                 <h1>Não sabe oque assistir?</h1>
             </div>
             {ApiData.title && (
-                <section id='visivel'>
+                <section id='visivel' key={ApiData.title}>
                 <h1>{ApiData.title}</h1>
-                <p>{ApiData.overview}</p>
+                <span className='date'>{ApiData.release_date}</span>
+                <p className='over'>{ApiData.overview}</p>
+                <span className='popularity'>Popularidade: {ApiData.popularity}</span>
+                <span className='avaliation'>Avaliação: {ApiData.vote_average}</span>
                 <img src={`https://image.tmdb.org/t/p/original${ApiData.backdrop_path}?api_key=6da2f5960d036177d9d4d6720c21301e`} alt="" />
             </section>
             )}
